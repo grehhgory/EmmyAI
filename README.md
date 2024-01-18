@@ -1,16 +1,9 @@
-# EmmyAI
+# Installation
+1. Install the Python packages in requirements.txt (`pip install -r requirements.txt`).
+2. Install FFMPEG (https://ffmpeg.org/download.html), VB-Cable (https://download.vb-audio.com/), and VTube Studio.
+3. Route the audio from Python to VB Cable's input, and from VB Cable's input to VTube Studio.
+4. In VTube Studio, enable "preview audio".
 
-Installation
--------
-- install miniconda
-- install ffmpeg and git
-- create the environment: ```conda create -n EmmyAI python=3.10.10```
-- activate the environment: ```conda activate EmmyAI```
-- install environment dependencies: ```pip install -r requirements.txt```
-- route audio from python to vb-cable input, then from vb-cable input to vtube studio
-- enable microphone with preview audio for vtuber model in vtube studio
-
-Debugging
--------
-- "running scripts is disabled on this system": ```Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser```
-- "pyaudio wheel could not be built": install pyaudio
+# Debugging
+- "running scripts is disabled on this system": `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+- "pyaudio wheel could not be built": Ensure PyAudio (https://pypi.org/project/PyAudio/) is properly installed.
