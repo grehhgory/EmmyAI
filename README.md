@@ -5,5 +5,5 @@
 4. In VTube Studio, enable "preview audio".
 
 # Debugging
-- "running scripts is disabled on this system": `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+- "running scripts is disabled on this system": Run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` on Powershell.
 - "pyaudio wheel could not be built": Ensure PyAudio (https://pypi.org/project/PyAudio/) is properly installed.
